@@ -1,0 +1,5 @@
+torch==2.5.1
+transformers>=4.50.0
+trl==0.16.0
+wandb==0.18.3
+flash_attn==2.7.2.post1

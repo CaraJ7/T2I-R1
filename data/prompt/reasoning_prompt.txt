@@ -1,0 +1,9 @@
+You are asked to generate an image based on this prompt: "{}"
+Provide a brief, precise visualization of all elements in the prompt. Your description should:
+1. Include every object mentioned in the prompt
+2. Specify visual attributes (color, number, shape, texture) if specified in the prompt
+3. Clarify relationships (e.g., spatial) between objects if specified in the prompt
+4. Be concise (50 words or less)
+5. Focus only on what's explicitly stated in the prompt
+6. Do not elaborate beyond the attributes or relationships specified in the prompt
+Do not miss objects. Output your visualization directly without explanation: 
