@@ -119,4 +119,4 @@ Explore our additional research on **Autoregressive Text-to-Image Generation** a
 - **[MMSearch]** [MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines](https://mmsearch.github.io/)
 
 ### 🥳 Acknowledgements
-We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V), upon which our repo is built.
+We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V) and [Image Generation CoT](https://github.com/ZiyuGuo99/Image-Generation-CoT), upon which our repo is built.
