@@ -1,11 +1,11 @@
 # 🌟🔥 T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
 
-Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT]()".
+Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
-[[📖 Paper]()] 
+[[📖 Paper](https://arxiv.org/pdf/2505.00703)] 
 
 ### 💥 News
-- **[2025.05.02]** We release the [arxiv paper]() and the training code. 🔥
+- **[2025.05.02]** We release the [arxiv paper](https://arxiv.org/pdf/2505.00703) and the training code. 🔥
 - **[2025.02.28]** Our previous work: *Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step* is accepted by **CVPR 2025** 🎉
 
 ### 🗒️ TODO
