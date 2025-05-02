@@ -118,5 +118,5 @@ Explore our additional research on **Autoregressive Text-to-Image Generation** a
 - **[MAVIS]** [MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine](https://arxiv.org/pdf/2407.08739)
 - **[MMSearch]** [MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines](https://mmsearch.github.io/)
 
-### 🥳 Thanks
+### 🥳 Acknowledgements
 We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V), upon which our repo is built.
