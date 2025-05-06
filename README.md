@@ -1,18 +1,18 @@
-## T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
+# 🌟🔥 T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
 
-Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT]()".
+Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
-[[📖 Paper]()] 
+[[📖 Paper](https://arxiv.org/pdf/2505.00703)] 
 
 ### 💥 News
-- **[2025.05.02]** We release the [arxiv paper]() and the training code. 🔥
-- **[2025.02.28]** Our previous work: *Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step* is accepted by **CVPR 2025** 🎉
+- **[2025.05.02]** We release the [arxiv paper](https://arxiv.org/pdf/2505.00703) and the training code. 🔥
+- **[2025.02.28]** Our previous work: [*Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step*](https://arxiv.org/pdf/2501.13926?) is accepted by **CVPR 2025** 🎉
 
 ### 🗒️ TODO
 
 - [ ] Release ORM Checkpoint and reward code (coming within a week)
 
-- [ ] Release Checkpoint (coming within 2 weeks)
+- [ ] Release Checkpoint (coming within two weeks)
 
 
 ## 👀 Reasoning in Image Generation
@@ -25,15 +25,10 @@ Chain-of-Thought (CoT) reasoning with reinforcement learning (RL) has been exten
 </p>
 
 We identify two levels of CoT that can be utilized to enhance different stages of generation:
-1. <span style="color:#2E75B6; font-weight:bold; font-style:italic;">Semantic-level CoT</span> 
-
-   <span style="color:#2E75B6; font-weight:bold; font-style:italic;">Semantic-level CoT</span> is the **textual reasoning about the image to generate**, which is introduced prior to the image generation. The semantic-level CoT designs the **global structure** of the image, e.g., the appearance and location of each object. 
+1. 🧠 **Semantic-level CoT** is the **textual reasoning about the image to generate**, which is introduced prior to the image generation. The semantic-level CoT designs the **global structure** of the image, e.g., the appearance and location of each object.
    Optimizing the semantic-level CoT could explicitly manage the planning and reasoning of the prompt before the subsequent image tokens generation, making the generation easier.
    
-2. <span style="color:#F3B000; font-weight:bold; font-style:italic;">Token-level CoT</span>
-
-   <span style="color:#F3B000; font-weight:bold; font-style:italic;">Token-level CoT</span> is the intermediate patch-by-patch generation process of the image. Unlike semantic-level CoT, token-level CoT focuses on **low-level details** like pixel generation and maintaining visual coherence between adjacent patches. 
-   
+3. 🎨 **Token-level CoT** is the intermediate patch-by-patch generation process of the image. Unlike semantic-level CoT, token-level CoT focuses on **low-level details** like pixel generation and maintaining visual coherence between adjacent patches. 
    Optimizing the token-level CoT can enhance both the generation quality and the alignment between the prompt and the resulting images.
 
 To better coordinate these two levels of CoT, we introduce **BiCoT-GRPO** with an ensemble of generation rewards, which seamlessly **optimizes both generation CoTs within the same training step**:
@@ -123,5 +118,5 @@ Explore our additional research on **Autoregressive Text-to-Image Generation** a
 - **[MAVIS]** [MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine](https://arxiv.org/pdf/2407.08739)
 - **[MMSearch]** [MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines](https://mmsearch.github.io/)
 
-### 🥳 Thanks
-We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V), which our repo is built upon.
+### 🥳 Acknowledgements
+We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V) and [Image Generation CoT](https://github.com/ZiyuGuo99/Image-Generation-CoT), upon which our repo is built.
