@@ -45,11 +45,12 @@ open_r1/grpo.py --use_vllm False \
 --image_token_num_per_image 576 \
 --cfg_weight 5 \
 --reasoning_prompt_path ../../../data/prompt/reasoning_prompt.txt \
---reward_funcs hps git gdino \
+--reward_funcs hps git gdino orm \
 --beta 0.01 \
 --tf32 true \
 --learning_rate 1e-6 \
 --hps_ckpt_path ../../../reward_weight/HPS_v2.1_compressed.pt \
 --git_ckpt_path ../../../reward_weight/git-large-vqav2 \
 --gdino_ckpt_path ../../../reward_weight/groundingdino_swint_ogc.pth \
---gdino_config_path utils/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py
+--gdino_config_path utils/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py \
+--orm_ckpt_path ../../../reward_weight/ORM-T2I-R1 \

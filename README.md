@@ -62,14 +62,21 @@ Create a conda environment:
    cd src
    pip install -r requirements.txt
    ```
-   Install GrouningDINO
+   Install GrouningDINO if you want to use Object Detector reward
    ```bash
    cd t2i-r1/src/t2i-r1/src/utils/GroundingDINO
    pip install -e .
    ```
+   Install LLaVA if you want to use ORM reward
+   ```bash
+   cd t2i-r1/src/t2i-r1/src/utils/LLaVA-NeXT
+   pip install -e ".[train]"
+   ```
    Note that other newer versions of torch, transformers, and trl may also work.
 
 ### Prepare Reward Model Checkpoints
+
+   Please download the reward model you needed for training.
 
    ```bash
    cd t2i-r1
@@ -91,13 +98,21 @@ Create a conda environment:
    wget https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
    ```
 
+   - Download ORM checkpoint from [this link](https://huggingface.co/CaraJ/ORM-T2I-R1) by
+   ```bash
+   huggingface-cli download CaraJ/ORM-T2I-R1 --repo-type model --local-dir ORM-T2I-R1
+   ```
+
 ### 🚀 Training 
 
 ```bash
 cd t2i-r1/src
 bash scripts/run_grpo.sh
 ```
-Make sure to substitute the correct checkpoint path and config path in the `run_grpo.sh`
+
+Notes:
++ Parameters:
+   - reward_funcs: The options are `hps`, `git`, `gdino`, `orm`. You can choose whatever composition you need for training. Make sure to substitute the correct checkpoint path and config path in the `run_grpo.sh`
 
 
 ### 💫 Inference              
@@ -111,6 +126,7 @@ python reason_inference.py \
 ### 📒 Notes
 + When necessary, we incorporate the corresponding repo from the reward model we use. We modify certain code to adapt for Zero3 training and delete unused folders to maintain a lightweight codebase.
    + For GroundingDINO, we modify the code in `t2i-r1/src/t2i-r1/src/utils/GroundingDINO/groundingdino/models/GroundingDINO/groundingdino.py`.
+   + For LLaVA (ORM), we modify the code in `t2i-r1/src/t2i-r1/src/utils/LLaVA-NeXT/llava/model/builder.py` and `t2i-r1/src/t2i-r1/src/utils/LLaVA-NeXT/llava/model/llava_arch.py`.
 
 ### 🧠 Related Work
 
