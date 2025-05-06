@@ -2,18 +2,13 @@
 
 Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
-[[📖 Paper](https://arxiv.org/pdf/2505.00703)] 
+<p align="center">
+    <img src="figs/fig3.jpg" width="100%"> <br>
+</p>
 
 ### 💥 News
 - **[2025.05.02]** We release the [arxiv paper](https://arxiv.org/pdf/2505.00703) and the training code. 🔥
 - **[2025.02.28]** Our previous work: [*Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step*](https://arxiv.org/pdf/2501.13926?) is accepted by **CVPR 2025** 🎉
-
-### 🗒️ TODO
-
-- [ ] Release ORM Checkpoint and reward code (coming within a week)
-
-- [ ] Release Checkpoint (coming within two weeks)
-
 
 ## 👀 Reasoning in Image Generation
 
@@ -37,6 +32,13 @@ To better coordinate these two levels of CoT, we introduce **BiCoT-GRPO** with a
     <img src="figs/fig2.png" width="90%"> <br>
 </p>
 
+
+### 🗒️ TODO
+
+- [ ] Release ORM Checkpoint and reward code (coming within a week)
+
+- [ ] Release Checkpoint (coming within two weeks)
+
 ## 💪 Get Started
 ### Installation
 
@@ -53,10 +55,11 @@ Create a conda environment:
    conda create -n t2i-r1 python=3.10
    conda activate t2i-r1
    ```
-   Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies.
+   Please follow the official instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies.
 
    Install additional dependencies:
    ```bash
+   cd src
    pip install -r requirements.txt
    ```
    Install GrouningDINO
@@ -106,7 +109,8 @@ python reason_inference.py \
 ```
 
 ### 📒 Notes
-+ We modify the code in `t2i-r1/src/t2i-r1/src/utils/GroundingDINO/groundingdino/models/GroundingDINO/groundingdino.py` to adapt to Zero3 training.
++ When necessary, we incorporate the corresponding repo from the reward model we use. We modify certain code to adapt for Zero3 training.
+   + For GroundingDINO, we modify the code in `t2i-r1/src/t2i-r1/src/utils/GroundingDINO/groundingdino/models/GroundingDINO/groundingdino.py`.
 
 ### 🧠 Related Work
 
