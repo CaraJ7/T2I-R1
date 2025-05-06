@@ -109,7 +109,7 @@ python reason_inference.py \
 ```
 
 ### 📒 Notes
-+ When necessary, we incorporate the corresponding repo from the reward model we use. We modify certain code to adapt for Zero3 training.
++ When necessary, we incorporate the corresponding repo from the reward model we use. We modify certain code to adapt for Zero3 training and delete unused folders to maintain a lightweight codebase.
    + For GroundingDINO, we modify the code in `t2i-r1/src/t2i-r1/src/utils/GroundingDINO/groundingdino/models/GroundingDINO/groundingdino.py`.
 
 ### 🧠 Related Work

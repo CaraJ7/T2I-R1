@@ -179,3 +179,4 @@ outputs/
 *.pth
 *.pt
 src/r1-v/src/utils/experts/expert_weights
+debug.sh

@@ -8,7 +8,7 @@ export DEBUG_MODE="true"
 export LOG_PATH="./outputs/debug.txt"
 # export NCCL_DEBUG=INFO
 
-QWEN_PATH="Janus-Pro-7B"
+QWEN_PATH="deepseek-ai/Janus-Pro-7B"
 HF_DATASET="../../../data/geneval_and_t2i_data_final.json" 
 OUTPUT_DIR="janus/outputs/${RUN_NAME}" 
 
