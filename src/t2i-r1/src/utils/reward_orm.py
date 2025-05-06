@@ -11,7 +11,6 @@ import sys
 from llava.model.builder import load_pretrained_model
 from llava.mm_utils import process_images, tokenizer_image_token
 from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
-# from llava.conversation import conv_templates, orm_identifier
 from llava.conversation import conv_templates
 
 
@@ -53,9 +52,6 @@ class ORM:
         # self.model.eval()
 
     def __call__(self, prompts, images, **kwargs):
-        # TODO: task specific
-        # if self.task_specific and kwargs['task_type'][0] in ['spatial', 'numeracy']:
-        #     return [1] * len(images)
 
         # Load the image
         results = []
