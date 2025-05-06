@@ -35,7 +35,7 @@ To better coordinate these two levels of CoT, we introduce **BiCoT-GRPO** with a
 
 ### 🗒️ TODO
 
-- [ ] Release ORM Checkpoint and reward code (coming within a week)
+- [x] Release ORM Checkpoint and reward code (coming within a week)
 
 - [ ] Release Checkpoint (coming within two weeks)
 
@@ -140,3 +140,13 @@ Explore our additional research on **Autoregressive Text-to-Image Generation** a
 
 ### 🥳 Acknowledgements
 We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V) and [Image Generation CoT](https://github.com/ZiyuGuo99/Image-Generation-CoT), upon which our repo is built.
+
+### 📄 Cite
+```
+@article{jiang2025t2i,
+  title={T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT},
+  author={Jiang, Dongzhi and Guo, Ziyu and Zhang, Renrui and Zong, Zhuofan and Li, Hao and Zhuo, Le and Yan, Shilin and Heng, Pheng-Ann and Li, Hongsheng},
+  journal={arXiv preprint arXiv:2505.00703},
+  year={2025}
+}
+```
