@@ -62,6 +62,12 @@ Create a conda environment:
    cd src
    pip install -r requirements.txt
    ```
+   Note that other newer versions of torch, transformers, and trl may also work.
+   
+### Set up the Reward Model Environment
+
+**Make sure to install from our repo. We make some necessary modifications to train with Zero3.**
+
    Install GrouningDINO if you want to use Object Detector reward
    ```bash
    cd t2i-r1/src/t2i-r1/src/utils/GroundingDINO
@@ -72,11 +78,10 @@ Create a conda environment:
    cd t2i-r1/src/t2i-r1/src/utils/LLaVA-NeXT
    pip install -e ".[train]"
    ```
-   Note that other newer versions of torch, transformers, and trl may also work.
 
 ### Prepare Reward Model Checkpoints
 
-   Please download the reward model you needed for training.
+   Please download the reward model you need for training.
 
    ```bash
    cd t2i-r1
