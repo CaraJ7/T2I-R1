@@ -146,6 +146,9 @@ Explore our additional research on **Autoregressive Text-to-Image Generation** a
 ### 🥳 Acknowledgements
 We would like to thank [R1-V](https://github.com/Deep-Agent/R1-V) and [Image Generation CoT](https://github.com/ZiyuGuo99/Image-Generation-CoT), upon which our repo is built.
 
+### Lincense
+This project is released under [Apache License 2.0](https://github.com/CaraJ7/T2I-R1/blob/main/LICENSE). We release our checkpoints for research purposes only. Users are granted the freedom to create images using this tool, but they are expected to comply with local laws and utilize it in a responsible manner. The developers do not assume any responsibility for potential misuse by users.
+
 ### 📄 Cite
 ```
 @article{jiang2025t2i,
