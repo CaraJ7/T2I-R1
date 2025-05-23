@@ -7,8 +7,9 @@ Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Co
 </p>
 
 ### 💥 News
+- **[2025.05.23]** Our new work exploring different RL Strategies for T2I is released: [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017) 🚀
 - **[2025.05.02]** We release the [arxiv paper](https://arxiv.org/pdf/2505.00703) and the training code. 🔥
-- **[2025.02.28]** Our previous work: [*Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step*](https://arxiv.org/pdf/2501.13926?) is accepted by **CVPR 2025** 🎉
+- **[2025.02.28]** Our previous work for Image Generation with CoT: [*Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step*](https://arxiv.org/pdf/2501.13926?) is accepted by **CVPR 2025** 🎉
 
 ## 👀 Reasoning in Image Generation
 
