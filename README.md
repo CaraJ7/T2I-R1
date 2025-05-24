@@ -2,11 +2,14 @@
 
 Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
+[[📖 Paper](https://arxiv.org/pdf/2505.00703)] [[🤗 Huggingface Checkpoint](https://huggingface.co/CaraJ/T2I-R1)]
+
 <p align="center">
     <img src="figs/fig3.jpg" width="100%"> <br>
 </p>
 
 ### 💥 News
+- **[2025.05.24]** We release the [checkpoint](https://huggingface.co/CaraJ/T2I-R1) of T2I-R1! 🔥
 - **[2025.05.23]** Our new work exploring different RL Strategies for T2I is released: [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017) 🚀
 - **[2025.05.02]** We release the [arxiv paper](https://arxiv.org/pdf/2505.00703) and the training code. 🔥
 - **[2025.02.28]** Our previous work for Image Generation with CoT: [*Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step*](https://arxiv.org/pdf/2501.13926?) is accepted by **CVPR 2025** 🎉
@@ -36,9 +39,9 @@ To better coordinate these two levels of CoT, we introduce **BiCoT-GRPO** with a
 
 ### 🗒️ TODO
 
-- [x] Release ORM Checkpoint and reward code (coming within a week)
+- [x] Release ORM Checkpoint and reward code 
 
-- [ ] Release Checkpoint (coming within two weeks)
+- [x] Release Checkpoint
 
 ## 💪 Get Started
 ### Installation
@@ -121,7 +124,9 @@ Notes:
    - reward_funcs: The options are `hps`, `git`, `gdino`, `orm`. You can choose whatever composition you need for training. Make sure to substitute the correct checkpoint path and config path in the `run_grpo.sh`
 
 
-### 💫 Inference              
+### 💫 Inference   
+You can download the checkpoint from [here](https://huggingface.co/CaraJ/T2I-R1) or train the model by yourself.
+
 ```
 cd t2i-r1/src/infer
 python reason_inference.py \
