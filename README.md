@@ -2,7 +2,7 @@
 
 Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
-[[📖 Paper](https://arxiv.org/pdf/2505.00703)] [[🤗 Huggingface Checkpoint](https://huggingface.co/CaraJ/T2I-R1)]
+[[📖 Paper](https://arxiv.org/pdf/2505.00703)] [[🤗 Model](https://huggingface.co/CaraJ/T2I-R1)]
 
 <p align="center">
     <img src="figs/fig3.jpg" width="100%"> <br>
