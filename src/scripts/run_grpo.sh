@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd t2i-r1/src
-# The latest vllm==0.7.2 is required for this script: pip3 install vllm==0.7.2 
 RUN_NAME="t2i-r1"
 
 export DEBUG_MODE="true"
@@ -12,8 +11,6 @@ QWEN_PATH="deepseek-ai/Janus-Pro-7B"
 HF_DATASET="../../../data/geneval_and_t2i_data_final.json" 
 OUTPUT_DIR="janus/outputs/${RUN_NAME}" 
 
-# NOTE: you are expected to use X + 1 cards for X training proc and 1 vLLM proc 
-# e.g., the visible devices should be 0,1,2,3,4 for 5 cards, and  --nproc_per_node="4"
 PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
 CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" \
 torchrun --nproc_per_node="8" \
