@@ -773,7 +773,7 @@ class JanusT2IR1Trainer(Trainer):
 
         mean_kl = (per_token_kl * completion_mask).sum() / completion_mask.sum()
         self._metrics[f"kl"].append(self.accelerator.gather_for_metrics(mean_kl).mean().item())
-        self._metrics[f"loss"].append(self.accelerator.gather_for_metrics(mean_kl).mean().item())
+        self._metrics[f"loss"].append(self.accelerator.gather_for_metrics(loss.detach()).mean().item())
 
         # Log the metrics
         completion_length = self.accelerator.gather_for_metrics(loss_dict['semantic-cot']['completion_mask'].sum(1)).float().mean().item()
