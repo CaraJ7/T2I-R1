@@ -1,4 +1,4 @@
-# 🌟🔥 T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
+# 🌟🔥 [NeurIPS 2025] T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
 
 Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT](https://arxiv.org/pdf/2505.00703)".
 
