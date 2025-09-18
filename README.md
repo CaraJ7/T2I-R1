@@ -9,6 +9,7 @@ Official repository for the paper "[T2I-R1: Reinforcing Image Generation with Co
 </p>
 
 ### 💥 News
+- **[2025.09.18]** T2I-R1 has been accepted by NeurIPS 2025! 🎉🎉
 - **[2025.06.12]** T2I-R1 has achieved the best result in open-source AR-based models in [TIIF-Bench](https://a113n-w3i.github.io/TIIF_Bench/)! 🔥
 - **[2025.05.24]** We release the [checkpoint](https://huggingface.co/CaraJ/T2I-R1) of T2I-R1! 🔥
 - **[2025.05.23]** Our new work exploring different RL Strategies for T2I is released: [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017) 🚀
